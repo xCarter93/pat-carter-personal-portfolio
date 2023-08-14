@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import pic from "../../resources/profile-pic.jpg";
+import { Link } from "react-scroll";
 
 export const NavBar = () => {
 	return (
@@ -18,24 +19,47 @@ export const NavBar = () => {
 						/>
 					</div>
 					<div className="text-center my-3 justify-around pt-3">
-						<div className="no-underline text-white">
-							<div className="my-6 mr-3 pl-3 navbar__li rounded-r-md">
-								<a href="#home" autoFocus={true}>
-									Home
-								</a>
-							</div>
-							<div className="my-6 mr-3 pl-3 navbar__li rounded-r-md">
-								<a href="#about">About</a>
-							</div>
-							<div className="my-6 mr-3 pl-3 navbar__li rounded-r-md">
-								<a href="#resume">Resume</a>
-							</div>
-							<div className="my-6 mr-3 pl-3 navbar__li rounded-r-md">
-								<a href="#portfolio">Portfolio</a>
-							</div>
-							<div className="my-6 mr-3 pl-3 navbar__li rounded-r-md">
-								<a href="#contact">Contact</a>
-							</div>
+						<div className="no-underline text-white flex flex-col cursor-pointer">
+							<Link
+								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
+								to="home"
+								smooth={true}
+								duration={500}
+							>
+								Home
+							</Link>
+							<Link
+								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
+								to="about"
+								smooth={true}
+								duration={500}
+							>
+								About
+							</Link>
+							<Link
+								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
+								to="resume"
+								smooth={true}
+								duration={500}
+							>
+								Resume
+							</Link>
+							<Link
+								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
+								to="portfolio"
+								smooth={true}
+								duration={500}
+							>
+								Portfolio
+							</Link>
+							<Link
+								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
+								to="contact"
+								smooth={true}
+								duration={500}
+							>
+								Contact
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -36,14 +36,13 @@ const TerminalHeader = () => {
 			<div className="w-3 h-3 rounded-full bg-red-500" />
 			<div className="w-3 h-3 rounded-full bg-yellow-500" />
 			<div className="w-3 h-3 rounded-full bg-green-500" />
-			<span className="text-sm text-slate-200 font-semibold absolute left-[50%] -translate-x-[50%]">
-				xcarter93@gmail.com
-			</span>
+			<span className="text-sm text-slate-200 font-semibold absolute left-[50%] -translate-x-[50%]"></span>
 		</div>
 	);
 };
 
 const TerminalBody = ({ containerRef, inputRef }) => {
+	const [error, setError] = useState("");
 	const [focused, setFocused] = useState(false);
 	const [text, setText] = useState("");
 
@@ -51,8 +50,19 @@ const TerminalBody = ({ containerRef, inputRef }) => {
 
 	const curQuestion = questions.find((q) => !q.complete);
 
+	const validateEmail = (email) => {
+		const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+		return regex.test(email);
+	};
+
 	const handleSubmitLine = (value) => {
 		if (curQuestion) {
+			if (curQuestion.key === "email" && !validateEmail(value)) {
+				setError("Please enter a valid email address.");
+				return;
+			}
+
+			setError("");
 			setQuestions((pv) =>
 				pv.map((q) => {
 					if (q.key === curQuestion.key) {
@@ -72,6 +82,7 @@ const TerminalBody = ({ containerRef, inputRef }) => {
 		<div className="p-2 text-slate-100 text-lg">
 			<InitialText />
 			<PreviousQuestions questions={questions} />
+			{error && <p className="text-red-600">{error}</p>}
 			<CurrentQuestion curQuestion={curQuestion} />
 			{curQuestion ? (
 				<CurLine
