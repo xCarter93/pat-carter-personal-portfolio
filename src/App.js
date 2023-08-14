@@ -7,6 +7,7 @@ import * as React from "react";
 import TerminalContact from "./components/ContactForm/Contact";
 import WaterDropHero from "./components/MainHero/MainHero";
 import ColorChangeCards from "./components/Portfolio/Portfolio";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
 	const particlesInit = useCallback(async (engine) => {
@@ -28,19 +29,13 @@ function App() {
 				loaded={particlesLoaded}
 				options={options}
 			/>
-			<main className="flex w-screen h-screen">
-				<NavBar />
 
-				<div className="w-full h-full ml-72 font-mono flex flex-col items-center justify-center">
-					<WaterDropHero />
-				</div>
-			</main>
-			<div className="ml-72">
-				<ColorChangeCards />
-			</div>
-			<div className="ml-72">
-				<TerminalContact />
-			</div>
+			<NavBar />
+
+			<WaterDropHero />
+			<AboutMe />
+			<ColorChangeCards />
+			<TerminalContact />
 		</>
 	);
 }

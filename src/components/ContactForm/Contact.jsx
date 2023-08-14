@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
 import { Fragment, useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const TerminalContact = () => {
 	const containerRef = useRef(null);
@@ -10,12 +11,10 @@ const TerminalContact = () => {
 		<section
 			id="contact"
 			style={{
-				// backgroundImage:
-				// 	"url(https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1734&q=80)",
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}
-			className="py-12"
+			className="py-12 ml-80 h-screen flex flex-col items-center justify-center"
 		>
 			<div
 				ref={containerRef}
@@ -156,6 +155,13 @@ const Summary = ({ questions, setQuestions }) => {
 
 		// Send this data to your server or whatever :)
 		console.log(formData);
+
+		emailjs.send(
+			"service_rd8uhka",
+			"template_qp2tsh3",
+			formData,
+			"3Nhi4rqzlU49tY7tu"
+		);
 
 		setComplete(true);
 	};

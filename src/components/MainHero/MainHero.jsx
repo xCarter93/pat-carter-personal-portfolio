@@ -5,7 +5,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 const WaterDropHero = () => {
 	return (
 		<section
-			className="text-slat-100 px-8 py-24 md:px-12 md:py-32 -translate-y-24"
+			className="text-slat-100 py-24 -translate-y-24 h-screen ml-80 font-mono flex flex-col items-center justify-center"
 			id="home"
 		>
 			<div className="relative">
@@ -25,13 +25,13 @@ const WaterDropHero = () => {
 					</Reveal>
 					<Reveal>
 						<p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
-							I've spent the last 5 years building and scaling software for some
-							pretty cool companies. I also teach people to paint online (incase
-							you've got an empty canvas layin' around 🎨). Let's connect!
+							I am a self taught developer with experience in Javascript and
+							Python. I have had experience using React, Express.js, Node.js and
+							others. Feel free to reach out! I would love to connect!
 						</p>
 					</Reveal>
 				</div>
-				<DotGrid />
+				{/* <DotGrid /> */}
 			</div>
 		</section>
 	);
@@ -111,7 +111,7 @@ export const Reveal = ({ children }) => {
 	}, [isInView]);
 
 	return (
-		<div ref={ref} className="relative w-fit overflow-hidden">
+		<div ref={ref} className="relative overflow-hidden">
 			<motion.div
 				variants={{
 					hidden: { opacity: 0, y: 75 },
