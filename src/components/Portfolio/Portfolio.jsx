@@ -11,25 +11,29 @@ const ColorChangeCards = () => {
 			className="p-4 md:p-8 ml-80 h-screen flex flex-col items-center justify-center"
 			id="portfolio"
 		>
-			<Reveal>
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
+				<Reveal>
 					<Card
 						heading="Smart Brain"
 						description="Allows you to provide a link to a picture and it will detect any faces in the picture.  Built using React and Express"
 						imgSrc={smartbrain}
 					/>
+				</Reveal>
+				<Reveal>
 					<Card
 						heading="Crown Clothing"
 						description="Online clothing store built using React"
 						imgSrc={crownclothing}
 					/>
+				</Reveal>
+				<Reveal>
 					<Card
 						heading="Notes App"
 						description="Notes app built using the MERN (MongoDB, Express, React, Node.js) tech stack."
 						imgSrc={notesapp}
 					/>
-				</div>
-			</Reveal>
+				</Reveal>
+			</div>
 		</div>
 	);
 };

@@ -2,6 +2,7 @@ import React from "react";
 import "./NavBar.css";
 import pic from "../../resources/profile-pic.jpg";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const NavBar = () => {
 	return (
@@ -17,6 +18,22 @@ export const NavBar = () => {
 							src={pic}
 							alt="profile"
 						/>
+						<div className="flex justify-center mt-4 space-x-4">
+							<a
+								href="https://github.com/xCarter93"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaGithub className="text-white text-3xl hover:text-gray-300" />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/patrick-carter-306746a8/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaLinkedin className="text-white text-3xl hover:text-gray-300" />
+							</a>
+						</div>
 					</div>
 					<div className="text-center my-3 justify-around pt-3">
 						<div className="no-underline text-white flex flex-col cursor-pointer">
