@@ -6,14 +6,14 @@ import { Link } from "react-scroll";
 export const NavBar = () => {
 	return (
 		<>
-			<nav className="h-screen fixed w-80 left-0 bg-indigo-950 items-center overflow-y-auto overflow-hidden transition-all ease-in-out duration-500 border font-mono text-2xl">
+			<nav className="h-screen fixed w-80 left-0 bg-indigo-950 items-center overflow-y-auto overflow-hidden transition-all ease-in-out duration-500 border border-slate-500 font-mono text-2xl">
 				{/*<div className="burger" >*/}
 				{/*  <img src="" alt="burger" />*/}
 				{/*</div>*/}
 				<div className="flex flex-col">
-					<div className="block text-center w-full relative h-max border-b p-4">
+					<div className="block text-center w-full relative h-max border-b-2 border-slate-500 p-4">
 						<img
-							className="rounded-full text-center h-auto overflow-hidden self-center max-w-[75%] border-slate-800 border-solid border-8 inline-block"
+							className="rounded-full text-center h-auto overflow-hidden self-center max-w-[75%] border-slate-500 border-solid border-8 inline-block"
 							src={pic}
 							alt="profile"
 						/>
