@@ -10,11 +10,9 @@ const WaterDropHero = () => {
 		>
 			<div className="relative">
 				<div className="pointer-events-none relative z-10">
-					<Reveal>
-						<h1 className="pointer-events-auto text-6xl font-black text-slate-100 md:text-8xl">
-							Hi, I'm Pat<span className="text-indigo-500">.</span>
-						</h1>
-					</Reveal>
+					<h1 className="pointer-events-auto text-6xl font-black text-slate-100 md:text-8xl">
+						Hi, I'm Pat<span className="text-indigo-500">.</span>
+					</h1>
 					<Reveal>
 						<h2 className="pointer-events-auto my-2 text-2xl text-slate-400 md:my-4 md:text-4xl">
 							I'm a{" "}

@@ -16,8 +16,8 @@ const AboutMe = () => {
 				risus eget purus feugiat malesuada.
 			</p>
 
-			<Reveal>
-				<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-100">
+			<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-100">
+				<Reveal>
 					<div className="flex items-center border rounded p-5 bg-slate-800">
 						<FaPython className="text-8xl text-white mr-5" />
 						<div>
@@ -28,7 +28,9 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
+				</Reveal>
 
+				<Reveal>
 					<div className="flex items-center border rounded p-5 bg-slate-800">
 						<FaSalesforce className="text-8xl text-white mr-5" />
 						<div>
@@ -39,7 +41,9 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
+				</Reveal>
 
+				<Reveal>
 					<div className="flex items-center border rounded p-5 bg-slate-800">
 						<FaReact className="text-8xl text-white mr-5" />
 						<div>
@@ -50,7 +54,8 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
-
+				</Reveal>
+				<Reveal>
 					<div className="flex items-center border rounded p-5 bg-slate-800">
 						<FaJsSquare className="text-8xl text-white mr-5" />
 						<div>
@@ -63,8 +68,8 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
-				</div>
-			</Reveal>
+				</Reveal>
+			</div>
 		</div>
 	);
 };

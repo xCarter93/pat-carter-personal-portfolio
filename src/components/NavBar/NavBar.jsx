@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export const NavBar = () => {
 	return (
 		<>
-			<nav className="h-screen fixed w-80 left-0 bg-indigo-950 items-center overflow-y-auto overflow-hidden transition-all ease-in-out duration-500 border border-slate-500 font-mono text-2xl">
+			<nav className="opacity-80 h-screen fixed w-80 left-0 bg-indigo-950 items-center overflow-y-auto overflow-hidden transition-all ease-in-out duration-500 border border-slate-500 font-mono text-2xl">
 				{/*<div className="burger" >*/}
 				{/*  <img src="" alt="burger" />*/}
 				{/*</div>*/}
