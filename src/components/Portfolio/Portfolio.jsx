@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import smartbrain from "../../resources/smartbrain-project.png";
-import crownclothing from "../../resources/crown-clothing.png";
-import notesapp from "../../resources/notes-app.png";
+import smartbrain from "../../resources/smartbrain-project-min.png";
+import crownclothing from "../../resources/crown-clothing-min.png";
+import notesapp from "../../resources/notes-app-min.png";
 import { Reveal } from "../MainHero/MainHero";
 
 const ColorChangeCards = () => {
