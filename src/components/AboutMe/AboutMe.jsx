@@ -5,13 +5,13 @@ const AboutMe = () => {
 	return (
 		<div
 			id="about"
-			className="h-screen ml-80 font-mono flex flex-col items-center justify-center py-20"
+			className="h-screen ml-[20%] font-mono flex flex-col items-center justify-center py-20 px-5"
 		>
-			<h1 className="pointer-events-auto text-6xl font-black text-slate-100 md:text-8xl my-10">
+			<h1 className="pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl">
 				About Me
 			</h1>
 
-			<p className="max-w-2xl text-center text-slate-100 text-xl mb-10">
+			<p className="text-center mb-10 pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
 				risus eget purus feugiat malesuada.
 			</p>
@@ -21,7 +21,9 @@ const AboutMe = () => {
 					<div className="flex items-center border rounded p-5 bg-slate-800">
 						<FaPython className="text-8xl text-white mr-5" />
 						<div>
-							<h3 className="text-xl font-bold text-slate-100 mb-2">Python</h3>
+							<h3 className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base mb-2">
+								Python
+							</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
 								vehicula, ipsum in posuere placerat.

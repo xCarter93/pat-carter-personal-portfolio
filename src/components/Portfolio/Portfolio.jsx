@@ -8,9 +8,12 @@ import { Reveal } from "../MainHero/MainHero";
 const ColorChangeCards = () => {
 	return (
 		<div
-			className="p-4 md:p-8 ml-80 h-screen flex flex-col items-center justify-center"
+			className="px-5 ml-[20%] h-screen flex flex-col items-center justify-center font-mono"
 			id="portfolio"
 		>
+			<h1 className="pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl">
+				Portfolio
+			</h1>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
 				<Reveal>
 					<Card
@@ -64,7 +67,7 @@ const Card = ({ heading, description, imgSrc }) => {
 							<ShiftLetter letter={l} key={i} />
 						))}
 					</h4>
-					<p>{description}</p>
+					<p className="text-sm md:text-base">{description}</p>
 				</div>
 			</div>
 		</motion.div>
@@ -73,7 +76,7 @@ const Card = ({ heading, description, imgSrc }) => {
 
 const ShiftLetter = ({ letter }) => {
 	return (
-		<div className="inline-block overflow-hidden h-[36px] font-semibold text-3xl">
+		<div className="inline-block overflow-hidden h-[25px] md:h-[36px] font-semibold text-xl md:text-3xl">
 			<motion.span
 				className="flex flex-col min-w-[4px]"
 				style={{

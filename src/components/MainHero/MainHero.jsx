@@ -5,32 +5,30 @@ import { useAnimation, useInView, motion } from "framer-motion";
 const WaterDropHero = () => {
 	return (
 		<section
-			className="text-slat-100 py-24 -translate-y-24 h-screen ml-80 font-mono flex flex-col items-center justify-center"
+			className="text-slat-100 py-24 px-5 -translate-y-24 h-screen ml-[20%] font-mono flex flex-col items-center justify-center text-center"
 			id="home"
 		>
-			<div className="relative">
-				<div className="pointer-events-none relative z-10">
-					<h1 className="pointer-events-auto text-6xl font-black text-slate-100 md:text-8xl">
-						Hi, I'm Pat<span className="text-indigo-500">.</span>
-					</h1>
-					<Reveal>
-						<h2 className="pointer-events-auto my-2 text-2xl text-slate-400 md:my-4 md:text-4xl">
-							I'm a{" "}
-							<span className="font-semibold text-indigo-500">
-								Full Stack Developer
-							</span>
-						</h2>
-					</Reveal>
-					<Reveal>
-						<p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
-							I am a self taught developer with experience in Javascript and
-							Python. I have had experience using React, Express.js, Node.js and
-							others. Feel free to reach out! I would love to connect!
-						</p>
-					</Reveal>
-				</div>
-				{/* <DotGrid /> */}
+			<div className="pointer-events-none relative z-10">
+				<h1 className="pointer-events-auto text-4xl md:text-6xl lg:text-8xl font-black text-slate-100">
+					Hi, I'm Pat<span className="text-indigo-500">.</span>
+				</h1>
+				<Reveal>
+					<h2 className="pointer-events-auto my-2 text-2xl text-slate-400 md:my-4 md:text-4xl">
+						I'm a{" "}
+						<span className="font-semibold text-indigo-500">
+							Full Stack Developer
+						</span>
+					</h2>
+				</Reveal>
+				<Reveal>
+					<p className="pointer-events-auto max-w-3xl text-sm text-slate-300 md:text-base mr-0">
+						I am a self taught developer with experience in Javascript and
+						Python. I have had experience using React, Express.js, Node.js and
+						others. Feel free to reach out! I would love to connect!
+					</p>
+				</Reveal>
 			</div>
+			{/* <DotGrid /> */}
 		</section>
 	);
 };
