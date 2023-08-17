@@ -11,63 +11,55 @@ const AboutMe = () => {
 				About Me
 			</h1>
 
-			<p className="text-center mb-10 pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
-				risus eget purus feugiat malesuada.
-			</p>
+			<div className="mb-10 pointer-events-auto max-w-4xl text-sm text-slate-300 md:text-base bg-slate-800 border rounded-md p-5 flex w-full">
+				<h4 className="font-extrabold inline mr-4">School:</h4>
+				<p className="mb-5">Marist College</p>
+			</div>
 
-			<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-100">
+			<h2 className="text-2xl font-black text-slate-100 mb-5 text-center">
+				Technologies / Frameworks
+			</h2>
+
+			<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-slate-100">
 				<Reveal>
-					<div className="flex items-center border rounded p-5 bg-slate-800">
-						<FaPython className="text-8xl text-white mr-5" />
+					<div className="flex items-center justify-center border rounded-md p-5 bg-slate-800">
+						<FaPython className="text-6xl text-white mr-5" />
 						<div>
-							<h3 className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base mb-2">
+							<h3 className="pointer-events-auto text-lg md:text-xl font-bold mb-2">
 								Python
 							</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-								vehicula, ipsum in posuere placerat.
-							</p>
 						</div>
 					</div>
 				</Reveal>
 
 				<Reveal>
-					<div className="flex items-center border rounded p-5 bg-slate-800">
-						<FaSalesforce className="text-8xl text-white mr-5" />
+					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-center">
+						<FaSalesforce className="text-6xl text-white mr-5" />
 						<div>
-							<h3 className="text-xl font-bold mb-2">Salesforce</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-								vehicula, ipsum in posuere placerat.
-							</p>
+							<h3 className="pointer-events-auto text-lg md:text-xl font-bold mb-2">
+								Salesforce
+							</h3>
 						</div>
 					</div>
 				</Reveal>
 
 				<Reveal>
-					<div className="flex items-center border rounded p-5 bg-slate-800">
-						<FaReact className="text-8xl text-white mr-5" />
+					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-center">
+						<FaReact className="text-6xl text-white mr-5" />
 						<div>
-							<h3 className="text-xl font-bold text-slate-100 mb-2">React</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-								vehicula, ipsum in posuere placerat.
-							</p>
+							<h3 className="pointer-events-auto text-lg md:text-xl font-bold mb-2">
+								React
+							</h3>
 						</div>
 					</div>
 				</Reveal>
 				<Reveal>
-					<div className="flex items-center border rounded p-5 bg-slate-800">
-						<FaJsSquare className="text-8xl text-white mr-5" />
+					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-center">
+						<FaJsSquare className="text-6xl text-white mr-5" />
 						<div>
-							<h3 className="text-xl font-bold text-slate-100 mb-2">
+							<h3 className="pointer-events-auto text-lg md:text-xl font-bold mb-2">
 								JavaScript
 							</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-								vehicula, ipsum in posuere placerat.
-							</p>
 						</div>
 					</div>
 				</Reveal>

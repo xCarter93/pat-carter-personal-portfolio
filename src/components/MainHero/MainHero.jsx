@@ -22,9 +22,10 @@ const WaterDropHero = () => {
 				</Reveal>
 				<Reveal>
 					<p className="pointer-events-auto max-w-3xl text-sm text-slate-300 md:text-base mr-0">
-						I am a self taught developer with experience in Javascript and
-						Python. I have had experience using React, Express.js, Node.js and
-						others. Feel free to reach out! I would love to connect!
+						I am a self taught developer with experience in Web Development,
+						Python, and Salesforce. I enjoy learning new technologies and
+						applying them to different issues. Please reach out, I would love to
+						connect!
 					</p>
 				</Reveal>
 			</div>
