@@ -1,5 +1,7 @@
 import { FaPython, FaSalesforce, FaReact, FaJsSquare } from "react-icons/fa";
 import { Reveal } from "../MainHero/MainHero";
+import Resume from "../Resume/Resume";
+import ResumePDF from "../../resources/Patrick_Carter_Resume_17-08-2023-16-32-51.pdf";
 
 const AboutMe = () => {
 	return (
@@ -12,8 +14,19 @@ const AboutMe = () => {
 			</h1>
 
 			<div className="mb-10 pointer-events-auto max-w-4xl text-sm text-slate-300 md:text-base bg-slate-800 border rounded-md p-5 flex w-full">
-				<h4 className="font-extrabold inline mr-4">School:</h4>
-				<p className="mb-5">Marist College</p>
+				<div className="flex-1">
+					<span className="font-extrabold text-lg mb-5 block">
+						School: <span className="font-light">Marist College</span>
+					</span>
+					<span className="font-extrabold text-lg mb-5">
+						Concentration: <span className="font-light">Mathematics</span>
+					</span>
+				</div>
+				<a href={ResumePDF} target="_blank" rel="noopener noreferrer">
+					<div className="flex-1">
+						<Resume />
+					</div>
+				</a>
 			</div>
 
 			<h2 className="text-2xl font-black text-slate-100 mb-5 text-center">

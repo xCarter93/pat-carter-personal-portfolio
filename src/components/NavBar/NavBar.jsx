@@ -54,19 +54,13 @@ export const NavBar = () => {
 							>
 								About
 							</Link>
-							<Link
-								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
-								to="resume"
-								smooth={true}
-								duration={500}
-							>
-								Resume
-							</Link>
+
 							<Link
 								className="my-6 mr-3 pl-3 navbar__li rounded-r-md"
 								to="portfolio"
 								smooth={true}
 								duration={500}
+								offset={25}
 							>
 								Portfolio
 							</Link>
