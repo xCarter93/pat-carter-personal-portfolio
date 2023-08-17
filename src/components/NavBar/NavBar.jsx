@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import pic from "../../resources/profile-pic-min.jpg";
+import pic from "../../resources/profile-pic-min.webp";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

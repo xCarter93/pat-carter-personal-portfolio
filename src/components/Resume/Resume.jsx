@@ -1,5 +1,5 @@
 import Tilt from "react-parallax-tilt";
-import resume from "../../resources/resume_screenshot-min.png";
+import resume from "../../resources/resume_screenshot-min.webp";
 
 const Resume = () => {
 	return (
