@@ -5,7 +5,7 @@ const AboutMe = () => {
 	return (
 		<div
 			id="about"
-			className="h-screen ml-[20%] font-mono flex flex-col items-center justify-center py-20 px-5"
+			className="md:h-screen ml-[25%] font-mono flex flex-col items-center justify-center py-20 px-5"
 		>
 			<h1 className="pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl">
 				About Me

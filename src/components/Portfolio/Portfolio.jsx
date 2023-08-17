@@ -8,7 +8,7 @@ import { Reveal } from "../MainHero/MainHero";
 const ColorChangeCards = () => {
 	return (
 		<div
-			className="px-5 ml-[20%] h-screen flex flex-col items-center justify-center font-mono"
+			className="px-5 ml-[25%] md:h-screen flex flex-col items-center justify-center font-mono"
 			id="portfolio"
 		>
 			<h1 className="pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl">

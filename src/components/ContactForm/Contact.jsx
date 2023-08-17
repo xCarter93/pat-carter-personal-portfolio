@@ -14,7 +14,7 @@ const TerminalContact = () => {
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}
-			className="py-12 px-5 ml-[20%] h-screen flex flex-col items-center justify-center"
+			className="py-12 px-5 ml-[25%] h-screen flex flex-col items-center justify-center"
 		>
 			<div
 				ref={containerRef}

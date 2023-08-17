@@ -5,7 +5,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 const WaterDropHero = () => {
 	return (
 		<section
-			className="text-slat-100 py-24 px-5 -translate-y-24 h-screen ml-[20%] font-mono flex flex-col items-center justify-center text-center"
+			className="text-slat-100 py-24 px-5 md:h-screen ml-[25%] font-mono flex flex-col items-center justify-center text-center"
 			id="home"
 		>
 			<div className="pointer-events-none relative z-10">
