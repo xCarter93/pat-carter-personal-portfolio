@@ -4,6 +4,7 @@ import smartbrain from "../../resources/smartbrain-project-min.webp";
 import crownclothing from "../../resources/crown-clothing-min.webp";
 import notesapp from "../../resources/notes-app-min.webp";
 import { Reveal } from "../MainHero/MainHero";
+import { Link } from "react-router-dom";
 
 const ColorChangeCards = () => {
 	return (
@@ -16,18 +17,30 @@ const ColorChangeCards = () => {
 			</h1>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
 				<Reveal>
-					<Card
-						heading="Smart Brain"
-						description="Allows you to provide a link to a picture and it will detect any faces in the picture.  Built using React and Express"
-						imgSrc={smartbrain}
-					/>
+					<Link
+						to="https://smartbrain-project-six.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Card
+							heading="Smart Brain"
+							description="Allows you to provide a link to a picture and it will detect any faces in the picture.  Built using React and Express"
+							imgSrc={smartbrain}
+						/>
+					</Link>
 				</Reveal>
 				<Reveal>
-					<Card
-						heading="Crown Clothing"
-						description="Online clothing store built using React"
-						imgSrc={crownclothing}
-					/>
+					<Link
+						to="https://crown-clothing-sepia.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Card
+							heading="Crown Clothing"
+							description="Online clothing store built using React"
+							imgSrc={crownclothing}
+						/>
+					</Link>
 				</Reveal>
 				<Reveal>
 					<Card
