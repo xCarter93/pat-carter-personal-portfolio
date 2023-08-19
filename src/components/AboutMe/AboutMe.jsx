@@ -27,52 +27,39 @@ const AboutMe = () => {
 			</h1>
 
 			<div className="mb-10 pointer-events-auto max-w-6xl text-sm text-slate-300 md:text-base bg-slate-800 border rounded-md p-5 flex flex-col lg:flex-row items-center w-full">
-				<div
-					className="mb-5 md:mb-0 flex-1"
-					style={{ flexBasis: "min-content" }}
-				>
-					<span className="font-extrabold text-md mb-5 block">
-						School:{" "}
-						<span className="font-thin text-sm lg:text-md">Marist College</span>
-					</span>
-					<span className="font-extrabold text-md mb-5 block">
-						Concentration:{" "}
-						<span className="font-thin text-sm lg:text-md">Mathematics</span>
-					</span>
-					<span className="font-extrabold text-md mb-5 block">
-						About Me:{" "}
-						<span className="font-thin text-sm lg:text-md">
-							I have grown up in and around the Boston area my entire life. I
-							went to school in New York in hopes to graduate with a Computer
-							Science degree, however, ended up shifting to Mathematics my
-							freshman year. Just because I made that change did not mean I lost
-							the interest in becoming a developer. Directly after graduating
-							college I did not think much about trying to learn to program,
-							until COVID-19 hit. Once everyone was forced inside I thought it
-							would be the perfect time to begin working towards a better
-							future.
-							<br />
-							<br />I started out learning Python and leveraged multiple
-							resources such as Udemy, Codecademy, The App Brewery, Zero To
-							Mastery and more. I was even able to leverage Python in my day to
-							day at my current role by writing a Python script that interacted
-							with our Salesforce environment. After getting comfortable with
-							Python I moved on to learning Web Development. Starting with HTML,
-							CSS, and vanilla Javascript. From there I went on to learn more
-							advanced topics like React, Redux, and NextJS and am currently
-							working to develop my skills in these areas. I have received
-							multiple certifications for my courses in Python and Web
-							Development and am looking to start the next chapter in my life
-							where I can use these skills on a day to day basis solving real
-							world issues.
-						</span>
+				<div className="mb-5 md:mb-0 flex-1">
+					<span className="font-thin text-sm lg:text-md">
+						Hello! I'm Patrick Carter, a passionate, self-taught developer with
+						a strong foundation in mathematics, having graduated from Marist
+						College with a degree in the subject. My journey into the tech world
+						began with my deep-rooted love for automation. Back in 2020, I
+						delved into the realm of Python, primarily using it for scripting
+						tasks that made everyday processes more efficient.
+						<br />
+						<br />
+						As time passed, my interests transitioned towards the expansive
+						domain of web development. Starting with the basics of HTML, CSS,
+						and vanilla JavaScript, I quickly developed a fondness for creating
+						intuitive and interactive web interfaces. This passion only grew
+						stronger as I immersed myself in the React ecosystem, and currently,
+						I'm honing my skills in NextJS, a cutting-edge framework that offers
+						unparalleled performance and scalability.
+						<br />
+						<br />
+						Now, as I stand at the cusp of an exciting new chapter in my life,
+						I'm eager to leverage my skills and knowledge in a professional
+						setting. I'm on the lookout for opportunities that will challenge
+						me, help me grow as a developer, and allow me to contribute to
+						meaningful projects. If you're in search of a dedicated and
+						enthusiastic developer with a unique blend of mathematical insight
+						and technical prowess, let's connect!
 					</span>
 				</div>
 				<a
 					href={ResumePDF}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex-1 w-auto justify-center md:ml-5 inline-flex"
+					className="w-auto justify-center m-10 inline-flex"
 				>
 					<Resume />
 				</a>
