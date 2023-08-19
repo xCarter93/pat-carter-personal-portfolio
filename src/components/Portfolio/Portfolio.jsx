@@ -24,7 +24,7 @@ const ColorChangeCards = () => {
 					>
 						<Card
 							heading="Smart Brain"
-							description="Allows you to provide a link to a picture and it will detect any faces in the picture.  Built using React and Express"
+							description="ReactJS, Express, PostregSQL, Clarifai API"
 							imgSrc={smartbrain}
 						/>
 					</Link>
@@ -37,7 +37,7 @@ const ColorChangeCards = () => {
 					>
 						<Card
 							heading="Crown Clothing"
-							description="Online clothing store built using React"
+							description="ReactJS, Firebase"
 							imgSrc={crownclothing}
 						/>
 					</Link>
@@ -45,7 +45,7 @@ const ColorChangeCards = () => {
 				<Reveal>
 					<Card
 						heading="Notes App"
-						description="Notes app built using the MERN (MongoDB, Express, React, Node.js) tech stack."
+						description="Typescript, ReactJS, MongoDB, Express"
 						imgSrc={notesapp}
 					/>
 				</Reveal>
