@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import { Reveal } from "../MainHero/MainHero";
 import Resume from "../Resume/Resume";
-import ResumePDF from "../../resources/Patrick_Carter_Resume_17-08-2023-16-32-51.pdf";
+import ResumePDF from "../../resources/Patrick_Carter_Resume.pdf";
 
 const AboutMe = () => {
 	return (
