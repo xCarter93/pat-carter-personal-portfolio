@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
+import smartbrain from "../../resources/smartbrain-project-min.webp";
+import crownclothing from "../../resources/crown-clothing-min.webp";
+import notesapp from "../../resources/notes-app-min.webp";
 
 const CARD_WIDTH = 350;
 const CARD_HEIGHT = 350;
@@ -40,10 +43,10 @@ const CardCarousel = () => {
 	};
 
 	return (
-		<section className="bg-slate-100" ref={ref}>
-			<div className="relative overflow-hidden p-4">
+		<section ref={ref}>
+			<div className="relative overflow-hidden p-4 px-5 ml-[25%] md:h-screen flex flex-col items-center justify-center font-mono max-w-fit">
 				{/* CARDS */}
-				<div className="mx-auto max-w-6xl">
+				<div className="ml-10 max-w-6xl">
 					<p className="mb-4 text-2xl font-semibold">
 						Everything. <span className="text-slate-500">Yes, even that.</span>
 					</p>
@@ -116,7 +119,7 @@ export default CardCarousel;
 const items = [
 	{
 		id: 1,
-		url: "/imgs/computer/mouse.png",
+		url: smartbrain,
 		category: "Mice",
 		title: "Just feels right",
 		description:
@@ -124,7 +127,7 @@ const items = [
 	},
 	{
 		id: 2,
-		url: "/imgs/computer/keyboard.png",
+		url: crownclothing,
 		category: "Keyboards",
 		title: "Type in style",
 		description:
@@ -132,7 +135,7 @@ const items = [
 	},
 	{
 		id: 3,
-		url: "/imgs/computer/monitor.png",
+		url: notesapp,
 		category: "Monitors",
 		title: "Looks like a win",
 		description:
@@ -143,30 +146,6 @@ const items = [
 		url: "/imgs/computer/chair.png",
 		category: "Chairs",
 		title: "Back feels great",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-	},
-	{
-		id: 5,
-		url: "/imgs/computer/lights.png",
-		category: "Lights",
-		title: "It's lit",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-	},
-	{
-		id: 6,
-		url: "/imgs/computer/desk.png",
-		category: "Desks",
-		title: "Stand up straight",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-	},
-	{
-		id: 7,
-		url: "/imgs/computer/headphones.png",
-		category: "Headphones",
-		title: "Sounds good",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
 	},

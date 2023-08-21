@@ -8,6 +8,7 @@ import TerminalContact from "./components/ContactForm/Contact";
 import WaterDropHero from "./components/MainHero/MainHero";
 import ColorChangeCards from "./components/Portfolio/Portfolio";
 import AboutMe from "./components/AboutMe/AboutMe";
+import CardCarousel from "./components/Portfolio/CarouselPortfolio";
 
 function App() {
 	const particlesInit = useCallback(async (engine) => {
@@ -35,6 +36,7 @@ function App() {
 			<WaterDropHero />
 			<AboutMe />
 			<ColorChangeCards />
+			<CardCarousel />
 			<TerminalContact />
 		</>
 	);
