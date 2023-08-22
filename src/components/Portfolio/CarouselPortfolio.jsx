@@ -5,10 +5,11 @@ import useMeasure from "react-use-measure";
 import smartbrain from "../../resources/smartbrain-project-min.webp";
 import crownclothing from "../../resources/crown-clothing-min.webp";
 import notesapp from "../../resources/notes-app-min.webp";
+import { Link } from "react-router-dom";
 
 const CARD_WIDTH = 350;
 const CARD_HEIGHT = 350;
-const MARGIN = 20;
+const MARGIN = 40;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
 
 const BREAKPOINTS = {
@@ -43,13 +44,13 @@ const CardCarousel = () => {
 	};
 
 	return (
-		<section ref={ref}>
-			<div className="relative overflow-hidden p-4 px-5 ml-[25%] md:h-screen flex flex-col items-center justify-center font-mono max-w-fit">
+		<section ref={ref} id="portfolio">
+			<div className="relative overflow-hidden p-4 px-5 ml-[25%] md:h-screen lg:flex lg:flex-col items-center justify-center font-mono">
+				<h1 className="flex pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl items-center justify-center px-5">
+					Portfolio
+				</h1>
 				{/* CARDS */}
-				<div className="ml-10 max-w-6xl">
-					<p className="mb-4 text-2xl font-semibold">
-						Everything. <span className="text-slate-500">Yes, even that.</span>
-					</p>
+				<div className="max-w-6xl overflow-hidden">
 					<motion.div
 						animate={{
 							x: offset,
@@ -90,27 +91,29 @@ const CardCarousel = () => {
 	);
 };
 
-const Card = ({ url, category, title, description }) => {
+const Card = ({ imgUrl, category, title, description, url }) => {
 	return (
-		<div
-			className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
-			style={{
-				width: CARD_WIDTH,
-				height: CARD_HEIGHT,
-				marginRight: MARGIN,
-				backgroundImage: `url(${url})`,
-				backgroundPosition: "center",
-				backgroundSize: "cover",
-			}}
-		>
-			<div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
-				<span className="text-xs font-semibold uppercase text-violet-300">
-					{category}
-				</span>
-				<p className="my-2 text-3xl font-bold">{title}</p>
-				<p className="text-lg text-slate-300">{description}</p>
+		<Link to={url} target="_blank" rel="noopener noreferrer">
+			<div
+				className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
+				style={{
+					width: CARD_WIDTH,
+					height: CARD_HEIGHT,
+					marginRight: MARGIN,
+					backgroundImage: `url(${imgUrl})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+				}}
+			>
+				<div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
+					<span className="text-xs font-semibold uppercase text-violet-300">
+						{category}
+					</span>
+					<p className="my-2 text-3xl font-bold">{title}</p>
+					<p className="text-lg text-slate-300">{description}</p>
+				</div>
 			</div>
-		</div>
+		</Link>
 	);
 };
 
@@ -119,34 +122,27 @@ export default CardCarousel;
 const items = [
 	{
 		id: 1,
-		url: smartbrain,
-		category: "Mice",
-		title: "Just feels right",
+		imgUrl: smartbrain,
+		category: "ReactJS, Express, PostregSQL, Clarifai API",
+		title: "SmartBrain",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+			"Single page React App that uses ML to do face recognition on image URLs",
+		url: "https://smartbrain-project-six.vercel.app/",
 	},
 	{
 		id: 2,
-		url: crownclothing,
-		category: "Keyboards",
-		title: "Type in style",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+		imgUrl: crownclothing,
+		category: "ReactJS, Firebase",
+		title: "Crown Clothing",
+		description: "Online clothing store built with ReactJS",
+		url: "https://crown-clothing-sepia.vercel.app/",
 	},
 	{
 		id: 3,
-		url: notesapp,
-		category: "Monitors",
-		title: "Looks like a win",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-	},
-	{
-		id: 4,
-		url: "/imgs/computer/chair.png",
-		category: "Chairs",
-		title: "Back feels great",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+		imgUrl: notesapp,
+		category: "Typescript, ReactJS, MongoDB, Express",
+		title: "Notes App",
+		description: "Notes App built using ReactJS and Typescript",
+		url: "",
 	},
 ];

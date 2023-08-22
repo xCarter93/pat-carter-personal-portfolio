@@ -6,7 +6,6 @@ import { NavBar } from "./components/NavBar/NavBar";
 import * as React from "react";
 import TerminalContact from "./components/ContactForm/Contact";
 import WaterDropHero from "./components/MainHero/MainHero";
-import ColorChangeCards from "./components/Portfolio/Portfolio";
 import AboutMe from "./components/AboutMe/AboutMe";
 import CardCarousel from "./components/Portfolio/CarouselPortfolio";
 
@@ -32,12 +31,12 @@ function App() {
 			/>
 
 			<NavBar />
-
-			<WaterDropHero />
-			<AboutMe />
-			<ColorChangeCards />
-			<CardCarousel />
-			<TerminalContact />
+			<div className="grid grid-cols-1">
+				<WaterDropHero />
+				<AboutMe />
+				<CardCarousel />
+				<TerminalContact />
+			</div>
 		</>
 	);
 }

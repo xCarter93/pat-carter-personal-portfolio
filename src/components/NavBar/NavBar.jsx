@@ -2,7 +2,7 @@ import React from "react";
 import "./NavBar.css";
 import pic from "../../resources/profile-pic-min.webp";
 import { Link } from "react-scroll";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSalesforce } from "react-icons/fa";
 
 export const NavBar = () => {
 	return (
@@ -33,6 +33,13 @@ export const NavBar = () => {
 								rel="noopener noreferrer"
 							>
 								<FaLinkedin className="text-white text-2xl md:text-3xl hover:text-gray-300" />
+							</a>
+							<a
+								href="https://www.salesforce.com/trailblazer/pcarter8"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaSalesforce className="text-white text-2xl md:text-3xl hover:text-gray-300" />
 							</a>
 						</div>
 					</div>
