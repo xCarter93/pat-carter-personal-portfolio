@@ -9,12 +9,12 @@ import { Link } from "react-router-dom";
 
 const CARD_WIDTH = 350;
 const CARD_HEIGHT = 350;
-const MARGIN = 40;
+const MARGIN = 20;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
 
 const BREAKPOINTS = {
 	sm: 640,
-	lg: 1024,
+	lg: 1044,
 };
 
 const CardCarousel = () => {
@@ -44,13 +44,16 @@ const CardCarousel = () => {
 	};
 
 	return (
-		<section ref={ref} id="portfolio">
-			<div className="relative overflow-hidden p-4 px-5 ml-[25%] md:h-screen lg:flex lg:flex-col items-center justify-center font-mono">
+		<section
+			id="portfolio"
+			className="lg:h-screen flex justify-center items-center"
+		>
+			<div className="relative overflow-hidden ml-[25%] items-center justify-center font-mono px-5">
 				<h1 className="flex pointer-events-auto font-black text-slate-100 my-10 text-4xl md:text-6xl lg:text-8xl items-center justify-center px-5">
 					Portfolio
 				</h1>
 				{/* CARDS */}
-				<div className="max-w-6xl overflow-hidden">
+				<div ref={ref} className="max-w-6xl overflow-hidden">
 					<motion.div
 						animate={{
 							x: offset,
@@ -61,10 +64,7 @@ const CardCarousel = () => {
 							return <Card key={item.id} {...item} />;
 						})}
 					</motion.div>
-				</div>
-
-				{/* BUTTONS */}
-				<>
+					{/* BUTTONS */}
 					<motion.button
 						initial={false}
 						animate={{
@@ -85,7 +85,7 @@ const CardCarousel = () => {
 					>
 						<FiChevronRight />
 					</motion.button>
-				</>
+				</div>
 			</div>
 		</section>
 	);
