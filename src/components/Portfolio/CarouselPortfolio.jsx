@@ -5,6 +5,7 @@ import useMeasure from "react-use-measure";
 import smartbrain from "../../resources/smartbrain-project-min.webp";
 import crownclothing from "../../resources/crown-clothing-min.webp";
 import notesapp from "../../resources/notes-app-min.webp";
+import yelpcamp from "../../resources/yelpcamp.png";
 import { Link } from "react-router-dom";
 
 const CARD_WIDTH = 350;
@@ -144,5 +145,13 @@ const items = [
 		title: "Notes App",
 		description: "Notes App built using ReactJS and Typescript",
 		url: "",
+	},
+	{
+		id: 4,
+		imgUrl: yelpcamp,
+		category: "Javascript, EJS, Express, MongoDB",
+		title: "Yelp Camp",
+		description: "Yelp clone for campsites around the world.",
+		url: "https://yelpcamp-hu87.onrender.com/",
 	},
 ];
