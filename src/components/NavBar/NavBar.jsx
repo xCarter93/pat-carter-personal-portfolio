@@ -12,13 +12,13 @@ export const NavBar = () => {
 				{/*  <img src="" alt="burger" />*/}
 				{/*</div>*/}
 				<div className="flex flex-col">
-					<div className="block text-center w-full relative h-max border-b-2 border-slate-500 p-4 text-2xl">
+					<div className="block text-center w-full relative h-max border-b-2 border-slate-500 p-4">
 						<img
 							className="rounded-full text-center h-auto overflow-hidden self-center max-w-[75%] xl:max-w-[50%] border-slate-500 border-solid border-4 md:border-8 inline-block"
 							src={pic}
 							alt="profile"
 						/>
-						<div className="flex justify-center mt-4 space-x-4 relative">
+						<div className="flex justify-center mt-4 space-x-1 sm:space-x-4 relative">
 							<a
 								href="https://github.com/xCarter93"
 								target="_blank"
