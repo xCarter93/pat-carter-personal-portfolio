@@ -16,6 +16,19 @@ import { Reveal } from "../MainHero/MainHero";
 import Resume from "../Resume/Resume";
 import ResumePDF from "../../resources/Patrick_Carter_Resume.pdf";
 
+const technologies = [
+	{ key: 0, name: "Python", icon: FaPython },
+	{ key: 1, name: "Salesforce", icon: FaSalesforce },
+	{ key: 2, name: "React", icon: FaReact },
+	{ key: 3, name: "Javascript", icon: FaJsSquare },
+	{ key: 4, name: "PostgreSQL", icon: SiPostgresql },
+	{ key: 5, name: "MongoDB", icon: SiMongodb },
+	{ key: 6, name: "Typescript", icon: SiTypescript },
+	{ key: 7, name: "Firebase", icon: SiFirebase },
+	{ key: 8, name: "HTML5", icon: FaHtml5 },
+	{ key: 9, name: "CSS", icon: FaCss3 },
+];
+
 const AboutMe = () => {
 	return (
 		<div
@@ -70,108 +83,18 @@ const AboutMe = () => {
 			</h2>
 
 			<div className="max-w-6xl w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-slate-100">
-				<Reveal>
-					<div className="flex items-center justify-evenly border rounded-md p-5 bg-slate-800">
-						<FaPython className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								Python
-							</h3>
+				{technologies.map((tech) => (
+					<Reveal key={tech.key}>
+						<div className="flex items-center justify-evenly border rounded-md p-5 bg-slate-800">
+							<tech.icon className="text-[30px] text-white mr-3" />
+							<div>
+								<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
+									{tech.name}
+								</h3>
+							</div>
 						</div>
-					</div>
-				</Reveal>
-
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<FaSalesforce className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								Salesforce
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<FaReact className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								React
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<FaJsSquare className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								JavaScript
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<SiPostgresql className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								PostgreSQL
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<SiMongodb className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								MongoDB
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<SiTypescript className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								Typescript
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<SiFirebase className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								Firebase
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<FaHtml5 className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								HTML5
-							</h3>
-						</div>
-					</div>
-				</Reveal>
-				<Reveal>
-					<div className="flex items-center border rounded-md p-5 bg-slate-800 justify-evenly">
-						<FaCss3 className="text-[30px] text-white mr-3" />
-						<div>
-							<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
-								CSS
-							</h3>
-						</div>
-					</div>
-				</Reveal>
+					</Reveal>
+				))}
 			</div>
 		</div>
 	);
