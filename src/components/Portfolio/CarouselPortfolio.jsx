@@ -8,6 +8,7 @@ import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";
 import { Link } from "react-router-dom";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { Reveal } from "../MainHero/MainHero";
 
 const MARGIN = 20;
 
@@ -58,46 +59,48 @@ const CardCarousel = () => {
 					Portfolio
 				</h1>
 				{/* CARDS */}
-				<div ref={ref} className="max-w-6xl overflow-hidden">
-					<motion.div
-						animate={{
-							x: offset,
-						}}
-						className="flex"
-					>
-						{items.map((item) => {
-							return (
-								<Card
-									key={item.id}
-									{...item}
-									height={CARD_HEIGHT}
-									width={CARD_WIDTH}
-								/>
-							);
-						})}
-					</motion.div>
-					{/* BUTTONS */}
-					<motion.button
-						initial={false}
-						animate={{
-							x: CAN_SHIFT_LEFT ? "0%" : "-100%",
-						}}
-						className="absolute left-0 top-[60%] z-30 rounded-xl bg-slate-100/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
-						onClick={shiftLeft}
-					>
-						<FiChevronLeft />
-					</motion.button>
-					<motion.button
-						initial={false}
-						animate={{
-							x: CAN_SHIFT_RIGHT ? "0%" : "100%",
-						}}
-						className="absolute right-0 top-[60%] z-30 rounded-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
-						onClick={shiftRight}
-					>
-						<FiChevronRight />
-					</motion.button>
-				</div>
+				<Reveal>
+					<div ref={ref} className="max-w-6xl overflow-hidden">
+						<motion.div
+							animate={{
+								x: offset,
+							}}
+							className="flex"
+						>
+							{items.map((item) => {
+								return (
+									<Card
+										key={item.id}
+										{...item}
+										height={CARD_HEIGHT}
+										width={CARD_WIDTH}
+									/>
+								);
+							})}
+						</motion.div>
+						{/* BUTTONS */}
+						<motion.button
+							initial={false}
+							animate={{
+								x: CAN_SHIFT_LEFT ? "0%" : "-100%",
+							}}
+							className="absolute left-0 top-[60%] z-30 rounded-xl bg-slate-100/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
+							onClick={shiftLeft}
+						>
+							<FiChevronLeft />
+						</motion.button>
+						<motion.button
+							initial={false}
+							animate={{
+								x: CAN_SHIFT_RIGHT ? "0%" : "100%",
+							}}
+							className="absolute right-0 top-[60%] z-30 rounded-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+							onClick={shiftRight}
+						>
+							<FiChevronRight />
+						</motion.button>
+					</div>
+				</Reveal>
 			</div>
 		</section>
 	);
