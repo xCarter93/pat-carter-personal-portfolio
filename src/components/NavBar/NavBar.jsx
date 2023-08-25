@@ -23,6 +23,7 @@ export const NavBar = () => {
 								href="https://github.com/xCarter93"
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Go to Github Profile"
 							>
 								<FaGithub className="text-white text-2xl md:text-3xl hover:text-gray-300" />
 							</a>
@@ -31,6 +32,7 @@ export const NavBar = () => {
 								href="https://www.linkedin.com/in/patrick-carter-306746a8/"
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Go to LinkedIn Profile"
 							>
 								<FaLinkedin className="text-white text-2xl md:text-3xl hover:text-gray-300" />
 							</a>
@@ -38,6 +40,7 @@ export const NavBar = () => {
 								href="https://www.salesforce.com/trailblazer/pcarter8"
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Go to Salesforce Profile"
 							>
 								<FaSalesforce className="text-white text-2xl md:text-3xl hover:text-gray-300" />
 							</a>
