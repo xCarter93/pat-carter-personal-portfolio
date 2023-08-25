@@ -7,11 +7,9 @@ import crownclothing from "../../resources/crown-clothing-min.webp";
 import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";
 import { Link } from "react-router-dom";
+import { useWindowSize } from "@uidotdev/usehooks";
 
-const CARD_WIDTH = 350;
-const CARD_HEIGHT = 350;
 const MARGIN = 20;
-const CARD_SIZE = CARD_WIDTH + MARGIN;
 
 const BREAKPOINTS = {
 	sm: 640,
@@ -21,6 +19,12 @@ const BREAKPOINTS = {
 const CardCarousel = () => {
 	const [ref, { width }] = useMeasure();
 	const [offset, setOffset] = useState(0);
+	const size = useWindowSize();
+
+	const CARD_WIDTH = size.width > BREAKPOINTS.sm ? 300 : 230;
+	const CARD_HEIGHT = 350;
+
+	const CARD_SIZE = CARD_WIDTH + MARGIN;
 
 	const CARD_BUFFER =
 		width > BREAKPOINTS.lg ? 3 : width > BREAKPOINTS.sm ? 2 : 1;
@@ -62,7 +66,14 @@ const CardCarousel = () => {
 						className="flex"
 					>
 						{items.map((item) => {
-							return <Card key={item.id} {...item} />;
+							return (
+								<Card
+									key={item.id}
+									{...item}
+									height={CARD_HEIGHT}
+									width={CARD_WIDTH}
+								/>
+							);
 						})}
 					</motion.div>
 					{/* BUTTONS */}
@@ -92,14 +103,14 @@ const CardCarousel = () => {
 	);
 };
 
-const Card = ({ imgUrl, category, title, description, url }) => {
+const Card = ({ imgUrl, category, title, description, url, height, width }) => {
 	return (
 		<Link to={url} target="_blank" rel="noopener noreferrer">
 			<div
 				className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
 				style={{
-					width: CARD_WIDTH,
-					height: CARD_HEIGHT,
+					width: width,
+					height: height,
 					marginRight: MARGIN,
 					backgroundImage: `url(${imgUrl})`,
 					backgroundPosition: "center",
