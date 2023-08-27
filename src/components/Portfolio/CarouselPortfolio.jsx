@@ -6,6 +6,7 @@ import smartbrain from "../../resources/smartbrain-project-min.webp";
 import crownclothing from "../../resources/crown-clothing-min.webp";
 import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";
+import imagegallery from "../../resources/image-gallery.webp";
 import { Link } from "react-router-dom";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { Reveal } from "../MainHero/MainHero";
@@ -154,10 +155,10 @@ const items = [
 	},
 	{
 		id: 3,
-		imgUrl: notesapp,
-		category: "Typescript, ReactJS, MongoDB, Express",
-		title: "Notes App",
-		description: "Notes App built using ReactJS and Typescript",
+		imgUrl: imagegallery,
+		category: "Typescript, NextJS, Unsplash API",
+		title: "NextJS Image Gallery",
+		description: "Image gallery built with NextJS and the Unsplash API",
 		url: "",
 	},
 	{
@@ -167,5 +168,13 @@ const items = [
 		title: "Yelp Camp",
 		description: "Yelp clone for campsites around the world.",
 		url: "https://yelpcamp-hu87.onrender.com/",
+	},
+	{
+		id: 5,
+		imgUrl: notesapp,
+		category: "Typescript, ReactJS, MongoDB, Express",
+		title: "Notes App",
+		description: "Notes App built using ReactJS and Typescript",
+		url: "",
 	},
 ];
