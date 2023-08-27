@@ -159,7 +159,7 @@ const items = [
 		category: "Typescript, NextJS, Unsplash API",
 		title: "NextJS Image Gallery",
 		description: "Image gallery built with NextJS and the Unsplash API",
-		url: "",
+		url: "https://nextjs13-image-gallery-eh4xhm4f0-xcarter93.vercel.app/",
 	},
 	{
 		id: 4,
