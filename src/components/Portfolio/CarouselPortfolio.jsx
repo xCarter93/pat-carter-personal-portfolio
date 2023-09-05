@@ -4,6 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import smartbrain from "../../resources/smartbrain-project-min.webp";
 import crownclothing from "../../resources/crown-clothing-min.webp";
+import ecommerce from "../../resources/nextjs-ecommerce.webp";
 import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";
 import imagegallery from "../../resources/image-gallery.webp";
@@ -171,6 +172,15 @@ const items = [
 	},
 	{
 		id: 5,
+		imgUrl: ecommerce,
+		category: "Typescript, ReactJS, MongoDB, Prisma, DaisyUI",
+		title: "Flowmazon (Amazon Clone)",
+		description:
+			"Amazon clone that allows you to add products to a cart, sign in, sign out, etc.",
+		url: "https://nextjs-ecommerce-xcarter93.vercel.app/",
+	},
+	{
+		id: 6,
 		imgUrl: notesapp,
 		category: "Typescript, ReactJS, MongoDB, Express",
 		title: "Notes App",
