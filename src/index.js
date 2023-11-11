@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import "tachyons";
+import { Analytics } from "@vercel/analytics/react";
 import { DevSupport } from "@react-buddy/ide-toolbox";
 import { ComponentPreviews, useInitial } from "./dev";
 import { BrowserRouter } from "react-router-dom";
@@ -16,6 +16,7 @@ root.render(
 			useInitialHook={useInitial}
 		>
 			<BrowserRouter>
+				<Analytics />
 				<App />
 			</BrowserRouter>
 		</DevSupport>
