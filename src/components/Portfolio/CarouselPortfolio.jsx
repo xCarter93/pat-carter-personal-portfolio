@@ -146,16 +146,16 @@ const items = [
 			"Single page React App that uses ML to do face recognition on image URLs",
 		url: "https://smartbrain-project-six.vercel.app/",
 	},
+	// {
+	// 	id: 2,
+	// 	imgUrl: crownclothing,
+	// 	category: "ReactJS, Firebase",
+	// 	title: "Crown Clothing",
+	// 	description: "Online clothing store built with ReactJS",
+	// 	url: "https://crown-clothing-sepia.vercel.app/",
+	// },
 	{
 		id: 2,
-		imgUrl: crownclothing,
-		category: "ReactJS, Firebase",
-		title: "Crown Clothing",
-		description: "Online clothing store built with ReactJS",
-		url: "https://crown-clothing-sepia.vercel.app/",
-	},
-	{
-		id: 3,
 		imgUrl: imagegallery,
 		category: "Typescript, NextJS, Unsplash API",
 		title: "NextJS Image Gallery",
@@ -163,7 +163,7 @@ const items = [
 		url: "https://nextjs13-image-gallery-eh4xhm4f0-xcarter93.vercel.app/",
 	},
 	{
-		id: 4,
+		id: 3,
 		imgUrl: yelpcamp,
 		category: "Javascript, EJS, Express, MongoDB",
 		title: "Yelp Camp",
@@ -171,7 +171,7 @@ const items = [
 		url: "https://yelpcamp-hu87.onrender.com/",
 	},
 	{
-		id: 5,
+		id: 4,
 		imgUrl: ecommerce,
 		category: "Typescript, ReactJS, MongoDB, Prisma, DaisyUI",
 		title: "Flowmazon (Amazon Clone)",
@@ -180,7 +180,7 @@ const items = [
 		url: "https://nextjs-ecommerce-xcarter93.vercel.app/",
 	},
 	{
-		id: 6,
+		id: 5,
 		imgUrl: notesapp,
 		category: "Typescript, ReactJS, MongoDB, Express",
 		title: "Notes App",
