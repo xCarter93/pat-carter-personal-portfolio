@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import smartbrain from "../../resources/smartbrain-project-min.webp";
-import crownclothing from "../../resources/crown-clothing-min.webp";
+// import crownclothing from "../../resources/crown-clothing-min.webp";
 import ecommerce from "../../resources/nextjs-ecommerce.webp";
 import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";

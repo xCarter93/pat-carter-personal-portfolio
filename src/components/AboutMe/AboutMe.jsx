@@ -42,30 +42,35 @@ const AboutMe = () => {
 			<div className="mb-10 pointer-events-auto max-w-6xl text-sm text-slate-300 md:text-base bg-slate-800 border rounded-md p-5 flex flex-col lg:flex-row items-center w-full">
 				<div className="mb-5 md:mb-0 flex-1">
 					<span className="font-thin text-sm lg:text-md">
-						Hello! I'm Patrick Carter, a passionate, self-taught developer with
-						a strong foundation in mathematics, having graduated from Marist
-						College with a degree in the subject. My journey into the tech world
-						began with my deep-rooted love for automation. Back in 2020, I
-						delved into the realm of Python, primarily using it for scripting
-						tasks that made everyday processes more efficient.
+						I am Patrick Carter, a dedicated and experienced professional
+						specializing in operational excellence within the SaaS industry.
+						Over the past five years, I have developed a strong skill set in
+						leading global teams and enhancing Quote to Cash processes. My
+						expertise includes leveraging advanced tools like Salesforce and
+						Python to optimize operations significantly. Having worked
+						internationally, I bring a wide-ranging perspective to process
+						optimization, which aids me in promoting cross-departmental
+						collaboration and increasing stakeholder value.
 						<br />
 						<br />
-						As time passed, my interests transitioned towards the expansive
-						domain of web development. Starting with the basics of HTML, CSS,
-						and vanilla JavaScript, I quickly developed a fondness for creating
-						intuitive and interactive web interfaces. This passion only grew
-						stronger as I immersed myself in the React ecosystem, and currently,
-						I'm honing my skills in NextJS, a cutting-edge framework that offers
-						unparalleled performance and scalability.
+						As a lifelong learner and proactive problem-solver, I pride myself
+						on my adaptability and hands-on approach to challenges. In 2023, I
+						earned three Salesforce certifications, reflecting my commitment to
+						staying abreast of technological advancements. My dedication and
+						attention to detail have been recognized consistently throughout my
+						career. I am passionate about driving process improvements and excel
+						in environments that challenge me to apply my automation and
+						coordination skills for business growth.
 						<br />
 						<br />
-						Now, as I stand at the cusp of an exciting new chapter in my life,
-						I'm eager to leverage my skills and knowledge in a professional
-						setting. I'm on the lookout for opportunities that will challenge
-						me, help me grow as a developer, and allow me to contribute to
-						meaningful projects. If you're in search of a dedicated and
-						enthusiastic developer with a unique blend of mathematical insight
-						and technical prowess, let's connect!
+						My resume not only showcases my technical and managerial
+						capabilities but also my ability to work collaboratively and
+						innovate. I have successfully led diverse teams across different
+						continents, ensuring efficient operational workflows and high team
+						engagement. My tenure at Datadog highlights my capacity to turn
+						complex challenges into streamlined, effective solutions. Combining
+						technical knowledge with leadership acumen, I consider myself a
+						valuable asset to any forward-thinking organization.
 					</span>
 				</div>
 				<a
