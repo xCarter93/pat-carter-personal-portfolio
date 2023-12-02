@@ -5,9 +5,9 @@ import useMeasure from "react-use-measure";
 import smartbrain from "../../resources/smartbrain-project-min.webp";
 // import crownclothing from "../../resources/crown-clothing-min.webp";
 import ecommerce from "../../resources/nextjs-ecommerce.webp";
-import notesapp from "../../resources/notes-app-min.webp";
 import yelpcamp from "../../resources/yelpcamp.png";
 import imagegallery from "../../resources/image-gallery.webp";
+import flowbrain from "../../resources/flowbrain.webp";
 import { Link } from "react-router-dom";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { Reveal } from "../MainHero/MainHero";
@@ -139,39 +139,14 @@ export default CardCarousel;
 const items = [
 	{
 		id: 1,
-		imgUrl: smartbrain,
-		category: "ReactJS, Express, PostregSQL, Clarifai API",
-		title: "SmartBrain",
-		description:
-			"Single page React App that uses ML to do face recognition on image URLs",
-		url: "https://smartbrain-project-six.vercel.app/",
+		imgUrl: flowbrain,
+		category: "OpenAI, Pinecone, Next.js, Shadcn UI, Clerk",
+		title: "FlowBrain",
+		description: "An intelligent note-taking app with AI integration",
+		url: "https://nextjs-notesapp-ai.vercel.app/",
 	},
-	// {
-	// 	id: 2,
-	// 	imgUrl: crownclothing,
-	// 	category: "ReactJS, Firebase",
-	// 	title: "Crown Clothing",
-	// 	description: "Online clothing store built with ReactJS",
-	// 	url: "https://crown-clothing-sepia.vercel.app/",
-	// },
 	{
 		id: 2,
-		imgUrl: imagegallery,
-		category: "Typescript, NextJS, Unsplash API",
-		title: "NextJS Image Gallery",
-		description: "Image gallery built with NextJS and the Unsplash API",
-		url: "https://nextjs13-image-gallery-eh4xhm4f0-xcarter93.vercel.app/",
-	},
-	{
-		id: 3,
-		imgUrl: yelpcamp,
-		category: "Javascript, EJS, Express, MongoDB",
-		title: "Yelp Camp",
-		description: "Yelp clone for campsites around the world.",
-		url: "https://yelpcamp-hu87.onrender.com/",
-	},
-	{
-		id: 4,
 		imgUrl: ecommerce,
 		category: "Typescript, ReactJS, MongoDB, Prisma, DaisyUI",
 		title: "Flowmazon (Amazon Clone)",
@@ -180,11 +155,28 @@ const items = [
 		url: "https://nextjs-ecommerce-xcarter93.vercel.app/",
 	},
 	{
+		id: 3,
+		imgUrl: imagegallery,
+		category: "Typescript, NextJS, Unsplash API",
+		title: "NextJS Image Gallery",
+		description: "Image gallery built with NextJS and the Unsplash API",
+		url: "https://nextjs13-image-gallery-eh4xhm4f0-xcarter93.vercel.app/",
+	},
+	{
+		id: 4,
+		imgUrl: smartbrain,
+		category: "ReactJS, Express, PostregSQL, Clarifai API",
+		title: "SmartBrain",
+		description:
+			"Single page React App that uses ML to do face recognition on image URLs",
+		url: "https://smartbrain-project-six.vercel.app/",
+	},
+	{
 		id: 5,
-		imgUrl: notesapp,
-		category: "Typescript, ReactJS, MongoDB, Express",
-		title: "Notes App",
-		description: "Notes App built using ReactJS and Typescript",
-		url: "",
+		imgUrl: yelpcamp,
+		category: "Javascript, EJS, Express, MongoDB",
+		title: "Yelp Camp",
+		description: "Yelp clone for campsites around the world.",
+		url: "https://yelpcamp-hu87.onrender.com/",
 	},
 ];
