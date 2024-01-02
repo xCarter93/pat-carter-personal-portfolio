@@ -91,7 +91,7 @@ const AboutMe = () => {
 				{technologies.map((tech) => (
 					<Reveal key={tech.key}>
 						<div className="flex items-center justify-evenly border rounded-md p-5 bg-slate-800">
-							<tech.icon className="text-[30px] text-white mr-3" />
+							<tech.icon className="text-[30px] text-white mr-3 flex-none" />
 							<div>
 								<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
 									{tech.name}
