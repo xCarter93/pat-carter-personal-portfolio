@@ -90,10 +90,10 @@ const AboutMe = () => {
 			<div className="max-w-6xl w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-slate-100">
 				{technologies.map((tech) => (
 					<Reveal key={tech.key}>
-						<div className="flex items-center justify-evenly border rounded-md p-5 bg-slate-800">
-							<tech.icon className="text-[30px] text-white mr-3 flex-none" />
+						<div className="flex items-center justify-around border rounded-md p-5 bg-slate-800">
+							<tech.icon className="text-[25px] text-white mr-3 flex-none" />
 							<div>
-								<h3 className="pointer-events-auto text-sm xl:text-lg font-bold">
+								<h3 className="pointer-events-auto text-xs xl:text-lg font-bold">
 									{tech.name}
 								</h3>
 							</div>
